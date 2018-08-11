@@ -27,8 +27,7 @@ apt_repository 'google-cloud-logging' do
   components ['main']
   uri "http://#{repo_host}/apt"
   distribution "google-cloud-logging-#{codename}"
-  keyserver 'pgp.mit.edu'
-  key 'D0BC747FD8CAF7117500D6FA3746C208A7317B0F'
+  key 'https://packages.cloud.google.com/apt/doc/apt-key.gpg'
 end
 
 package 'google-fluentd' do
